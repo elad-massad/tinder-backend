@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rm -rf build && mkdir build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --exec node_modules/.bin/babel-node server.js"
+    "start": "nodemon --exec babel-node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +22,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-node": "^0.0.1-security",
-    "babel-preset-env": "^1.7.0"
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^2.0.12"
   }
 }
