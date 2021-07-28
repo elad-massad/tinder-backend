@@ -1,5 +1,5 @@
 
-const Cards = require('./dbCards');
+import Cards from './dbCards.js';
 const mongoose = require("mongoose");
 const express = require('express');
 const cors = require('cors');

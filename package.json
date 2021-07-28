@@ -4,18 +4,24 @@
   "description": "",
   "main": "server.js",
   "type": "module",
-  
   "scripts": {
+    "clean": "rm -rf build && mkdir build",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "nodemon --exec node_modules/.bin/babel-node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-preset-env": "^1.7.0",
     "cors": "^2.8.5",
     "es6": "0.0.7",
     "esm": "^3.2.25",
     "express": "^4.17.1",
     "mongoose": "^5.13.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-node": "^0.0.1-security"
   }
 }
