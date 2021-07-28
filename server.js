@@ -1,7 +1,8 @@
-import Cards from "./dbCards.js";
-import mongoose from "mongoose";
-import express from 'express';
-import cors from 'cors';
+
+const Cards = require('./dbCards.js');
+const mongoose = require("mongoose");
+const express = require('express');
+const cors = require('cors');
 //App Config
 
 const app = express();
